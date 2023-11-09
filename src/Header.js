@@ -8,10 +8,10 @@ export default function Header() {
       <header>
         <img src={logo} alt="IP Detective" title="IP Detective" />
         <nav>
-          <a href="#section1">Home</a>
-          <a href="#section2">Try it</a>
-          <a href="#section3">About</a>
-          <a href="#section4">Questions</a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#try">Try it out</a>
+          <a href="#questions">Questions</a>
         </nav>
       </header>
     </div>

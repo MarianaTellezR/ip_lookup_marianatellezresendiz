@@ -7,10 +7,10 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <section id="section1"></section>
-        <section id="section2"></section>
-        <section id="section3"></section>
-        <section id="section4"></section>
+        <section id="home"></section>
+        <section id="about"></section>
+        <section id="try"></section>
+        <section id="questions"></section>
       </main>
       <Footer />
     </div>
