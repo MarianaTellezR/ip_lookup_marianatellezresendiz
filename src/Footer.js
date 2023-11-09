@@ -13,6 +13,11 @@ export default function Footer() {
             <a href="#try">Try it out</a>
             <a href="#questions">Questions</a>
           </nav>
+          <nav>
+            <a href="https://github.com/MarianaTellezR" title="Github">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </nav>
         </section>
         <section>
           <p>
