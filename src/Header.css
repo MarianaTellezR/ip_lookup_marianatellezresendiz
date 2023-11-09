@@ -1,11 +1,21 @@
+:root {
+  --main-blue: #407ff0;
+  --secondary-blue: #6699f4;
+  --yellow: #fec337;
+  --main-pink: #f46caf;
+  --secondary-pink: #f685bd;
+}
+
 .Header {
-  background-color: #407ff0;
+  background-color: var(--main-blue);
+  font-family: 'Quicksand', sans-serif;
 }
 
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 1em 0em;
 }
 
 img {
@@ -13,14 +23,14 @@ img {
 }
 
 nav a {
-    padding: 0em 1em;
-    color: white;
-    text-decoration: none;
-    transition: all 200ms ease-in-out;
-    font-size: 1em;
+  padding: 0em 1em;
+  color: white;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  font-size: 1.1em;
 }
 
 nav a:hover {
-    cursor: pointer;
-    color: #fec337;
+  cursor: pointer;
+  color: var(--yellow);
 }
