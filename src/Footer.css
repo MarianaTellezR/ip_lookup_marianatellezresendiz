@@ -1,0 +1,28 @@
+:root {
+  --main-blue: #407ff0;
+  --secondary-blue: #6699f4;
+  --yellow: #fec337;
+  --main-pink: #f46caf;
+  --secondary-pink: #f685bd;
+}
+
+.Footer {
+  padding-top: 1.2em;
+}
+
+footer {
+  background-color: var(--main-blue);
+  padding: 0.2em 0em;
+  color: white;
+}
+
+a {
+  color: var(--yellow);
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 222);
+}
