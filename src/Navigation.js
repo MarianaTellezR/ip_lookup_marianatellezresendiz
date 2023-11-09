@@ -5,10 +5,10 @@ export default function Navigation() {
     <div className="Navigation">
       <header>
         <nav>
-          <a href="#section">Home</a>
-          <a href="#section">Try it</a>
-          <a href="#section">About</a>
-          <a href="#section">Questions</a>
+          <a href="#section1">Home</a>
+          <a href="#section2">Try it</a>
+          <a href="#section3">About</a>
+          <a href="#section4">Questions</a>
         </nav>
       </header>
     </div>
