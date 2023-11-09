@@ -1,8 +1,9 @@
 import React from "react";
+import "./Header.css";
 
-export default function Navigation() {
+export default function Header() {
   return (
-    <div className="Navigation">
+    <div className="Header">
       <header>
         <nav>
           <a href="#section1">Home</a>
