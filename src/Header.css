@@ -1,3 +1,26 @@
 .Header {
   background-color: #407ff0;
 }
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  width: 10%;
+}
+
+nav a {
+    padding: 0em 1em;
+    color: white;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+    font-size: 1em;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: #fec337;
+}
