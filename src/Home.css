@@ -1,0 +1,75 @@
+:root {
+  --main-blue: #407ff0;
+  --secondary-blue: #6699f4;
+  --yellow: #fec337;
+  --main-pink: #f46caf;
+  --secondary-pink: #f685bd;
+}
+
+.Home {
+  background-color: var(--main-blue);
+  padding: 7.5em;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 5em;
+  color: white;
+}
+
+.Home p {
+  font-size: 1.2em;
+  color: white;
+  padding-bottom: 2.5em;
+  line-height: 1.7;
+}
+
+.Home a {
+  background-color: var(--yellow);
+  color: white;
+  border-radius: 5px;
+  padding: 0.7em 0.8em;
+  font-size: 1.2em;
+  transition: all 200ms ease-in-out;
+}
+
+.Home a:hover {
+  cursor: pointer;
+  background-color: #d6a125;
+}
+
+@media all and (max-width: 59.375em) {
+  h1 {
+    font-size: 3em;
+  }
+  .Home p {
+    font-size: 1em;
+  }
+  .Home a {
+    font-size: 1.1em;
+  }
+}
+
+@media all and (max-width: 40.62em) {
+  .Home {
+    padding: 5em;
+  }
+}
+
+@media all and (max-width: 26.875em) {
+  .Home {
+    padding: 4.5em 2em;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  .Home p {
+    font-size: 0.7em;
+  }
+
+  .Home a {
+    font-size: 0.7em;
+  }
+}
