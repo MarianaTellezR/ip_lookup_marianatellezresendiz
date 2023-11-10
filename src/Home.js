@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="Home">
       <h1>
-        Explore the power of IP Detective{" "}
+        Explore the power of <span>IP Detective</span>{" "}
         <i className="fa-solid fa-magnifying-glass"></i>
       </h1>
       <p>
