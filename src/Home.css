@@ -35,7 +35,7 @@ h1 {
 }
 
 .Home span {
-    color: var(--yellow);
+  color: var(--yellow);
 }
 
 .Home a:hover {
@@ -76,5 +76,11 @@ h1 {
 
   .Home a {
     font-size: 0.7em;
+  }
+}
+
+@media all and (max-width: 24.5em) {
+  .Home {
+    padding: 1.3em 1.8em 4.5em 1.8em;
   }
 }
