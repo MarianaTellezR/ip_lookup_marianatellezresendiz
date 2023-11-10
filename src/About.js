@@ -1,4 +1,7 @@
 import React from "react";
+import location from "./location.png";
+import security from "./security.png";
+import research from "./research.png";
 
 export default function About() {
   return (
@@ -6,6 +9,7 @@ export default function About() {
       <h2>About IP Detective</h2>
       <section>
         <article>
+          <img src={location} alt="location" title="Location" />
           <h3>Geo-Locate Any IP</h3>
           <p>
             Instantly pinpoint the geographical location of any IP address.
@@ -15,6 +19,7 @@ export default function About() {
           </p>
         </article>
         <article>
+          <img src={security} alt="security" title="Security" />
           <h3>Enhanced Security</h3>
           <p>
             Monitor your network for potential threats by identifying the
@@ -24,6 +29,7 @@ export default function About() {
           </p>
         </article>
         <article>
+          <img src={research} alt="research" title="Research" />
           <h3>Research and Insights:</h3>
           <p>
             Explore the global reach of your website's audience or gather
