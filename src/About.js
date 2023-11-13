@@ -2,6 +2,7 @@ import React from "react";
 import location from "./location.png";
 import security from "./security.png";
 import research from "./research.png";
+import "./About.css";
 
 export default function About() {
   return (
