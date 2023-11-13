@@ -21,27 +21,30 @@
 }
 
 .About h2 {
-    color: black;
-    font-family: 'Rubik', sans-serif;
+  color: black;
+  font-family: "Rubik", sans-serif;
 }
 
 .About h3 {
-    padding: 0.5em 0em;
-    font-family: 'Rubik', sans-serif;
+  padding: 0.5em 0em;
+  font-family: "Rubik", sans-serif;
 }
 
 .About p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .blue {
-    background-color: var(--main-blue);
+  background-color: var(--main-blue);
+  /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 5px 0px 0px 5px;
 }
 
 .yellow {
-    background-color: var(--yellow);
+  background-color: var(--yellow);
 }
 
 .pink {
-    background-color: var(--main-pink);
+  background-color: var(--main-pink);
+  border-radius: 0px 5px 5px 0px;
 }
