@@ -8,8 +8,8 @@ export default function About() {
   return (
     <div className="About">
       <h2>About IP Detective</h2>
-      <section className="row">
-        <article className="col-12 col-sm-4">
+      <section className="row justify-content-between">
+        <article className="col-12 col-sm-4 blue">
           <img src={location} alt="location" title="Location" />
           <h3>Geo-Locate Any IP</h3>
           <p>
@@ -19,7 +19,7 @@ export default function About() {
             precise location data.
           </p>
         </article>
-        <article className="col-12 col-sm-4">
+        <article className="col-12 col-sm-4 yellow">
           <img src={security} alt="security" title="Security" />
           <h3>Enhanced Security</h3>
           <p>
@@ -29,7 +29,7 @@ export default function About() {
             security.
           </p>
         </article>
-        <article className="col-12 col-sm-4">
+        <article className="col-12 col-sm-4 pink">
           <img src={research} alt="research" title="Research" />
           <h3>Research and Insights:</h3>
           <p>

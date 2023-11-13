@@ -1,3 +1,47 @@
+:root {
+  --main-blue: #407ff0;
+  --secondary-blue: #6699f4;
+  --yellow: #fec337;
+  --main-pink: #f46caf;
+  --secondary-pink: #f685bd;
+}
+
 .About {
   margin: 5em;
+  color: white;
+}
+
+.About article {
+  margin: 3em 0em;
+  padding: 2em;
+}
+
+.About img {
+  padding: 2em 0em;
+}
+
+.About h2 {
+    color: black;
+    font-family: 'Rubik', sans-serif;
+}
+
+.About h3 {
+    padding: 0.5em 0em;
+    font-family: 'Rubik', sans-serif;
+}
+
+.About p {
+    text-align: justify;
+}
+
+.blue {
+    background-color: var(--main-blue);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.pink {
+    background-color: var(--main-pink);
 }
