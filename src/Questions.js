@@ -17,7 +17,7 @@ export default function Questions() {
         <div>
           <h3 className="pink">How precise is the location data?</h3>
           <p>
-            Our IP lookup tool delivers an impressive ballpark estimat of the
+            Our IP lookup tool delivers an impressive estimate of the
             exact location. It gets you close to the truth, but there's always
             room for a tiny margin of error.
           </p>
