@@ -1,5 +1,5 @@
 .Questions {
-    margin: 7em auto;
+    margin: 7em auto 4em auto;
 }
 
 .Questions h2 {
@@ -22,9 +22,27 @@
     margin: 1.4em;
     padding: 0.4em;
     font-size: 1.8em;
+    border-radius: 5px;
+    color: white;
 }
 
 .Questions p {
     text-align: justify;
     padding: 1em 2em;
+}
+
+.blue {
+    background-color: #407ff0;
+}
+
+.pink {
+    background-color: #f46caf;
+}
+
+.yellow {
+    background-color: #fec337;
+}
+
+.green {
+    background-color: #42C744;
 }
