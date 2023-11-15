@@ -20,10 +20,13 @@
   color: var(--yellow);
   transition: all 200ms ease-in-out;
   text-decoration: none;
+  padding: 0.5em 0.15em;
+  border-radius: 3px;
 }
 
 .Footer a:hover {
   cursor: pointer;
+  background-color: var(--yellow);
   color: rgb(255, 255, 222);
 }
 
