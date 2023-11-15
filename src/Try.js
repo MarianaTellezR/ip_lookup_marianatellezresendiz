@@ -8,7 +8,7 @@ export default function Try() {
       <section>
         <div>
           <form>
-            <label for="ip">Enter your IP address:</label>
+            <label htmlFor="ip">Enter your IP address:</label>
             <input
               type="text"
               id="ip"
