@@ -60,15 +60,17 @@
 }
 
 .Try input[type="submit"]:hover {
-    background-color: #779de4;
+    background-color: #6a94e2;
     cursor: pointer;
 }
 
 ::placeholder {
   color: #407ff0;
   opacity: 1; /* Firefox */
+  text-align: center;
 }
 
 ::-ms-input-placeholder { /* Edge 12 -18 */
   color: #407ff0;
+  text-align: center;
 }
