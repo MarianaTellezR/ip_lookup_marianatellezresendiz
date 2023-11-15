@@ -6,7 +6,7 @@ import "./About.css";
 
 export default function About() {
   return (
-    <div className="About">
+    <div className="About"> 
       <h2>About IP Detective</h2>
       <section className="row justify-content-between">
         <article className="col-12 col-sm-4 blue">

@@ -7,8 +7,11 @@
 }
 
 .About {
-  margin: 5em;
+  margin: 5em auto;
   color: white;
+  max-width: 1300px;
+  width: 85%;
+  display: block;
 }
 
 .About article {
@@ -47,4 +50,17 @@
 .pink {
   background-color: var(--main-pink);
   border-radius: 0px 5px 5px 0px;
+}
+
+@media all and (max-width: 575px) {
+  .blue,
+  .yellow,
+  .pink {
+    border-radius: 5px;
+  }
+
+  .About article {
+    margin: 1em 0em;
+    padding: 1.4em;
+  }
 }
