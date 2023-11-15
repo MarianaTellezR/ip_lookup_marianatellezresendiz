@@ -11,14 +11,23 @@
     white 20px,
     white 40px
   );
-  margin: 4em 5em;
-  padding: 8em;
+  max-width: 1330px;
+  width: 85%;
+  display: block;
+  margin: 4em auto;
+  padding: 8em 0em;
+  border-radius: 8px;
 }
 
 .Try div {
   background-color: #fec337;
   box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.2);
-  padding: 5em 2em;
+  display: block;
+  margin: 0 auto;
+  padding: 5em 1em;
+  max-width: 750px;
+  width: 80%;
+  border-radius: 8px;
 }
 
 .Try form {
@@ -28,25 +37,25 @@
 }
 
 .Try label {
-    color: white;
-    font-weight: 600;
-    font-size: 1.2em;
-    letter-spacing: 1.5px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: 1.5px;
 }
 
 .Try input {
   margin: 0.2em auto;
   max-width: 25em;
   width: 65%;
-  min-width: 10em;
+  min-width: 7em;
 }
 
 .Try input[type="text"] {
-    background-color: #edf1f8;
-    color: #407ff0;
-    border: 2px solid #edf1f8;
-    border-radius: 8px;
-    padding: 0.8em 0.6em;
+  background-color: #edf1f8;
+  color: #407ff0;
+  border: 2px solid #edf1f8;
+  border-radius: 8px;
+  padding: 0.8em 0.6em;
 }
 
 .Try input[type="submit"] {
@@ -60,8 +69,8 @@
 }
 
 .Try input[type="submit"]:hover {
-    background-color: #6a94e2;
-    cursor: pointer;
+  background-color: #6a94e2;
+  cursor: pointer;
 }
 
 ::placeholder {
@@ -70,7 +79,8 @@
   text-align: center;
 }
 
-::-ms-input-placeholder { /* Edge 12 -18 */
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
   color: #407ff0;
   text-align: center;
 }
