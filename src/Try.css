@@ -27,9 +27,48 @@
   gap: 1.3em;
 }
 
+.Try label {
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 1.5px;
+}
+
 .Try input {
   margin: 0.2em auto;
   max-width: 25em;
   width: 65%;
   min-width: 10em;
+}
+
+.Try input[type="text"] {
+    background-color: #edf1f8;
+    color: #407ff0;
+    border: 2px solid #edf1f8;
+    border-radius: 8px;
+    padding: 0.8em 0.6em;
+}
+
+.Try input[type="submit"] {
+  background-color: #407ff0;
+  color: white;
+  font-weight: 600;
+  border: 2px solid #407ff0;
+  border-radius: 8px;
+  padding: 0.8em 0.6em;
+  transition: all 200ms ease-in-out;
+}
+
+.Try input[type="submit"]:hover {
+    background-color: #779de4;
+    cursor: pointer;
+}
+
+::placeholder {
+  color: #407ff0;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: #407ff0;
 }
