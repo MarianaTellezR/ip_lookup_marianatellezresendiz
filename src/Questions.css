@@ -1,5 +1,30 @@
+.Questions {
+    margin: 7em auto;
+}
+
+.Questions h2 {
+  color: black;
+  font-family: "Rubik", sans-serif;
+}
+
 .Questions section {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
+  gap: 0.9em;
+  max-width: 1330px;
+  width: 85%;
+  margin: 2.8em auto;
+  padding: 1em 3em;
+}
+
+.Questions h3 {
+    margin: 1.4em;
+    padding: 0.4em;
+    font-size: 1.8em;
+}
+
+.Questions p {
+    text-align: justify;
+    padding: 1em 2em;
 }
