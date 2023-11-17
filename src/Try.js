@@ -28,7 +28,7 @@ export default function Try() {
           </form>
         </div>
       </section>
-      {componentVisible && <Results />}
+      <div className="Results">{componentVisible && <Results />}</div>
     </div>
   );
 }
