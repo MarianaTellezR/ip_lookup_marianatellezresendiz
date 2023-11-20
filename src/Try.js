@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Try.css";
-import Results from "./Results";
+import Result from "./Result";
 
 export default function Try() {
   const [componentVisible, setComponentVisible] = useState(false);
@@ -35,7 +35,7 @@ export default function Try() {
         </div>
       </section>
       <div className="Results">
-        {componentVisible && <Results address={ip} />}
+        {componentVisible && <Result address={ip} />}
       </div>
     </div>
   );
