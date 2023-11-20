@@ -34,9 +34,12 @@ export default function Try() {
           </form>
         </div>
       </section>
-      <div className="Results">
-        {componentVisible && <Result address={ip} />}
-      </div>
+
+      {componentVisible && (
+        <div className="Results">
+          <Result address={ip} />
+        </div>
+      )}
     </div>
   );
 }

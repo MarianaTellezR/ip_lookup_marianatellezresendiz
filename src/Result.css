@@ -1,3 +1,9 @@
 .Result {
   background-color: white;
+  display: block;
+  margin: 0 auto;
+  padding: 5em 1em;
+  max-width: 1000px;
+  width: 80%;
+  border-radius: 8px;
 }
