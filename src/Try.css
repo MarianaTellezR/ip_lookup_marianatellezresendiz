@@ -19,8 +19,15 @@
   border-radius: 8px;
 }
 
-.Try .Results div {
-  background-color: white;
+.Try .Results {
+  background-color: #fcfcfc;
+  box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
+  padding: 5em 1em;
+  max-width: 1330px;
+  width: 85%;
+  border-radius: 8px;
 }
 
 .Try div {
