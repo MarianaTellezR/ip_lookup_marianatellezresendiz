@@ -4,6 +4,11 @@ import Results from "./Results";
 
 export default function Try() {
   const [componentVisible, setComponentVisible] = useState(false);
+  const [ip, setIp] = useState("");
+
+  function updateIP(event) {
+    setIp(event.target.value);
+  }
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
@@ -22,13 +27,16 @@ export default function Try() {
               id="ip"
               name="ip"
               placeholder="IP Address"
+              onChange={updateIP}
               required
             />
             <input type="submit" value="Search" />
           </form>
         </div>
       </section>
-      <div className="Results">{componentVisible && <Results />}</div>
+      <div className="Results">
+        {componentVisible && <Results address={ip} />}
+      </div>
     </div>
   );
 }
