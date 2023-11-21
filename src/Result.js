@@ -10,14 +10,18 @@ export default function Result(props) {
     <div className="Result">
       <h2>Your Results</h2>
       <p>{props.address}</p>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <img src={address} title="Address" alt="Address" />
-          </div>
-          <div class="col-12 col-md-6">
-            <img src={ipaddress} title="Address" alt="Address" />
-          </div>
+      <div className="container">
+        <div className="row">
+          <img src={address} title="Address" alt="Address" />
+        </div>
+        <div className="row">
+          <img src={ipaddress} title="IP Address" alt="IP Address" />
+        </div>
+        <div className="row">
+          <img src={location} title="Location" alt="Location" />
+        </div>
+        <div className="row">
+          <img src={timezone} title="Timezone" alt="Timezone" />
         </div>
       </div>
     </div>
