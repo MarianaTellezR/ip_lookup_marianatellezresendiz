@@ -9,7 +9,6 @@ export default function Result(props) {
   return (
     <div className="Result">
       <h2>Your Results</h2>
-      <p>{props.address}</p>
       <div className="container">
         <div className="fila">
           <img src={address} title="Address" alt="Address" />
@@ -17,7 +16,7 @@ export default function Result(props) {
         </div>
         <div className="fila">
           <img src={ipaddress} title="IP Address" alt="IP Address" />
-          <p>12.3.22.23</p>
+          <p>{props.address}</p>
         </div>
         <div className="fila">
           <img src={location} title="Location" alt="Location" />

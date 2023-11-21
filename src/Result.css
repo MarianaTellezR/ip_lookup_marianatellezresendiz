@@ -21,7 +21,7 @@
 
 .Result .container {
   display: block;
-  margin: 0 auto;
+  margin: 15px auto;
   width: 80%;
 }
 
@@ -35,7 +35,24 @@
 }
 
 .Result img {
-  width: 8%;
+  width: 6%;
   display: block;
   margin: 0 auto;
+}
+
+.Result p {
+  margin-bottom: 0;
+}
+
+@media all and (max-width: 934px) {
+  .Result .container {
+    display: block;
+    margin: 25px auto;
+    width: 95%;
+  }
+  .Result .container .fila {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+  }
 }
