@@ -19,13 +19,23 @@
   border-radius: 8px;
 }
 
+.Result .container {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
 .Result .container .fila {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 100%;
+  gap: 15px;
+  justify-content: center;
   align-items: center;
 }
 
 .Result img {
-  width: 10%;
+  width: 8%;
+  display: block;
+  margin: 0 auto;
 }
