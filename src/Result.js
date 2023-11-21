@@ -11,17 +11,21 @@ export default function Result(props) {
       <h2>Your Results</h2>
       <p>{props.address}</p>
       <div className="container">
-        <div className="row">
+        <div className="fila">
           <img src={address} title="Address" alt="Address" />
+          <p>Comcast Cable Communications, LLC</p>
         </div>
-        <div className="row">
+        <div className="fila">
           <img src={ipaddress} title="IP Address" alt="IP Address" />
+          <p>12.3.22.23</p>
         </div>
-        <div className="row">
+        <div className="fila">
           <img src={location} title="Location" alt="Location" />
+          <p>Chicago, Illinois, United States</p>
         </div>
-        <div className="row">
+        <div className="fila">
           <img src={timezone} title="Timezone" alt="Timezone" />
+          <p>America / Chicago</p>
         </div>
       </div>
     </div>
