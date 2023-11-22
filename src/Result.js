@@ -27,6 +27,9 @@ export default function Result(props) {
           <p>America / Chicago</p>
         </div>
       </div>
+      <div className="container">
+        
+      </div>
     </div>
   );
 }
