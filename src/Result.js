@@ -6,6 +6,7 @@ import location from "./address3.png";
 import timezone from "./address4.png";
 
 export default function Result(props) {
+  console.log(props.apiResult);
   return (
     <div className="Result">
       <h2>Your Results</h2>
