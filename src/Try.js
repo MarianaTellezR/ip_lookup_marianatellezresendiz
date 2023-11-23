@@ -3,17 +3,33 @@ import "./Try.css";
 import Result from "./Result";
 import axios from "axios";
 
+const apiKey = "ANYzH5mXNp6wmAgNFfDWmQ==W42f644bVF4hybzS";
+
 export default function Try() {
   const [componentVisible, setComponentVisible] = useState(false);
   const [ip, setIp] = useState("");
+  const [apiResult, setApiResult] = useState(null); // State to store API result
 
   function updateIP(event) {
     setIp(event.target.value);
   }
 
-  const handleFormSubmit = (event) => {
+  const handleFormSubmit = async (event) => {
     event.preventDefault();
-    setComponentVisible(true);
+    
+    try {
+      const response = await axios.get(`https://api.api-ninjas.com/v1/iplookup?address=${ip}`, {
+        headers: {
+          'X-Api-Key': apiKey,
+          'Content-Type': 'application/json',
+        },
+      });
+
+      setApiResult(response.data);
+      setComponentVisible(true);
+    } catch (error) {
+      console.error('Error: ', error);
+    }
   };
 
   return (
@@ -38,7 +54,7 @@ export default function Try() {
 
       {componentVisible && (
         <div className="Results">
-          <Result address={ip} />
+          <Result address={ip} apiResult={apiResult} />
         </div>
       )}
     </div>
