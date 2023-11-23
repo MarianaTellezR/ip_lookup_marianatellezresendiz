@@ -14,7 +14,7 @@ export default function Result(props) {
       <div className="container">
         <div className="fila">
           <img src={address} title="Address" alt="Address" />
-          <p>Comcast Cable Communications, LLC</p>
+          <p>{props.data.isp}</p>
         </div>
         <div className="fila">
           <img src={ipaddress} title="IP Address" alt="IP Address" />
@@ -22,16 +22,14 @@ export default function Result(props) {
         </div>
         <div className="fila">
           <img src={location} title="Location" alt="Location" />
-          <p>Chicago, Illinois, United States</p>
+          <p>{props.data.city}, {props.data.region}, {props.data.country}</p>
         </div>
         <div className="fila">
           <img src={timezone} title="Timezone" alt="Timezone" />
-          <p>America / Chicago</p>
+          <p>{props.data.timezone}</p>
         </div>
       </div>
-      <div className="container">
-        
-      </div>
+      <div className="container"></div>
     </div>
   );
 }
