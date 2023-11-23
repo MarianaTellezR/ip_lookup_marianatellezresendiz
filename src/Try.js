@@ -9,6 +9,7 @@ export default function Try() {
   const [componentVisible, setComponentVisible] = useState(false);
   const [ip, setIp] = useState("");
   const [apiResult, setApiResult] = useState(null); // State to store API result
+  const [data, setData] = useState({});
 
   function updateIP(event) {
     setIp(event.target.value);
@@ -16,19 +17,33 @@ export default function Try() {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    
+
     try {
-      const response = await axios.get(`https://api.api-ninjas.com/v1/iplookup?address=${ip}`, {
-        headers: {
-          'X-Api-Key': apiKey,
-          'Content-Type': 'application/json',
-        },
-      });
+      const response = await axios.get(
+        `https://api.api-ninjas.com/v1/iplookup?address=${ip}`,
+        {
+          headers: {
+            "X-Api-Key": apiKey,
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       setApiResult(response.data);
+      setData({
+        address: response.data.address,
+        city: response.data.city,
+        country: response.data.country,
+        isp: response.data.isp,
+        latitude: response.data.lat,
+        longitude: response.data.lon,
+        region: response.data.region,
+        timezone: response.data.timezone,
+        zip: response.data.zip,
+      });
       setComponentVisible(true);
     } catch (error) {
-      console.error('Error: ', error);
+      console.error("Error: ", error);
     }
   };
 
@@ -54,7 +69,7 @@ export default function Try() {
 
       {componentVisible && (
         <div className="Results">
-          <Result address={ip} apiResult={apiResult} />
+          <Result address={ip} apiResult={apiResult} data={data} />
         </div>
       )}
     </div>
