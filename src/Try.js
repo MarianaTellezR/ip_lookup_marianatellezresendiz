@@ -10,13 +10,27 @@ export default function Try() {
   const [ip, setIp] = useState("");
   const [apiResult, setApiResult] = useState(null); // State to store API result
   const [data, setData] = useState({});
+  const [isIpValid, setIsIpValid] = useState(true);
 
   function updateIP(event) {
-    setIp(event.target.value);
+    const enteredIp = event.target.value;
+    setIp(enteredIp);
+
+    // Basic IP address validation
+    const ipRegex = /^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/;
+    setIsIpValid(ipRegex.test(enteredIp));
   }
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
+
+    if (!isIpValid) {
+      alert(
+        "Invalid IP address. Please enter a valid IP address. Must be in the format A.B.C.D."
+      );
+      return;
+    }
+
 
     try {
       const response = await axios.get(
