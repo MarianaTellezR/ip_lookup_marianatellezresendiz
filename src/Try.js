@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Try.css";
 import Result from "./Result";
+import axios from "axios";
 
 export default function Try() {
   const [componentVisible, setComponentVisible] = useState(false);
