@@ -13,7 +13,11 @@ export default function Result(props) {
     return (
       <div className="Result">
         <h2>Your Results</h2>
-        <p>This IP Address is not available.</p>
+        <div class="alert alert-primary" role="alert">
+          <p>
+            This IP Address is not available. Please enter a valid IP Address.
+          </p>
+        </div>
       </div>
     );
   } else {
