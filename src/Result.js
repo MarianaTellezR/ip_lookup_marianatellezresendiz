@@ -8,28 +8,40 @@ import timezone from "./address4.png";
 export default function Result(props) {
   console.log(props.apiResult);
   console.log(props.data);
-  return (
-    <div className="Result">
-      <h2>Your Results</h2>
-      <div className="container">
-        <div className="fila">
-          <img src={address} title="Address" alt="Address" />
-          <p>{props.data.isp}</p>
-        </div>
-        <div className="fila">
-          <img src={ipaddress} title="IP Address" alt="IP Address" />
-          <p>{props.address}</p>
-        </div>
-        <div className="fila">
-          <img src={location} title="Location" alt="Location" />
-          <p>{props.data.city}, {props.data.region}, {props.data.country}</p>
-        </div>
-        <div className="fila">
-          <img src={timezone} title="Timezone" alt="Timezone" />
-          <p>{props.data.timezone}</p>
-        </div>
+
+  if (!props.data.valido) {
+    return (
+      <div className="Result">
+        <h2>Your Results</h2>
+        <p>This IP Address is not available.</p>
       </div>
-      <div className="container"></div>
-    </div>
-  );
+    );
+  } else {
+    return (
+      <div className="Result">
+        <h2>Your Results</h2>
+        <div className="container">
+          <div className="fila">
+            <img src={address} title="Address" alt="Address" />
+            <p>{props.data.isp}</p>
+          </div>
+          <div className="fila">
+            <img src={ipaddress} title="IP Address" alt="IP Address" />
+            <p>{props.address}</p>
+          </div>
+          <div className="fila">
+            <img src={location} title="Location" alt="Location" />
+            <p>
+              {props.data.city}, {props.data.region}, {props.data.country}
+            </p>
+          </div>
+          <div className="fila">
+            <img src={timezone} title="Timezone" alt="Timezone" />
+            <p>{props.data.timezone}</p>
+          </div>
+        </div>
+        <div className="container"></div>
+      </div>
+    );
+  }
 }
