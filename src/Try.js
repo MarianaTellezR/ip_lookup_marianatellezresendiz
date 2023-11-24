@@ -31,7 +31,6 @@ export default function Try() {
       return;
     }
 
-
     try {
       const response = await axios.get(
         `https://api.api-ninjas.com/v1/iplookup?address=${ip}`,
@@ -45,6 +44,7 @@ export default function Try() {
 
       setApiResult(response.data);
       setData({
+        valido: response.data.is_valid,
         address: response.data.address,
         city: response.data.city,
         country: response.data.country,
