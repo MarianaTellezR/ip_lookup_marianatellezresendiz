@@ -8,6 +8,10 @@
   border-radius: 8px;
 }
 
+.Result h2 {
+  margin-bottom: 39px;
+}
+
 .Result div {
   background-color: #ffffff;
   display: block;
@@ -42,7 +46,7 @@
 
 .Result p {
   margin-bottom: 0;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .Result .alert {

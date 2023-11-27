@@ -24,7 +24,7 @@ export default function Result(props) {
   } else {
     return (
       <div className="Result">
-        <h2>Your Results</h2>
+        <h2>Results</h2>
         <div className="container">
           <div className="fila">
             <img src={address} title="Address" alt="Address" />
