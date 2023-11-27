@@ -42,6 +42,7 @@
 
 .Result p {
   margin-bottom: 0;
+  font-size: 25px;
 }
 
 .Result .alert {
@@ -50,7 +51,7 @@
   padding: 2.5em 0.8em;
 }
 
-@media all and (max-width: 934px) {
+@media all and (max-width: 1100px) {
   .Result .container {
     display: block;
     margin: 25px auto;
@@ -65,5 +66,12 @@
     background-color: #243b617a;
     margin: 2em 0em;
     padding: 2.5em 0.2em;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .Result p {
+    margin-bottom: 0;
+    font-size: 19px;
   }
 }
