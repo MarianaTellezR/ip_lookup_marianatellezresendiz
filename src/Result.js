@@ -5,6 +5,7 @@ import address from "./address1.png";
 import ipaddress from "./address2.png";
 import location from "./address3.png";
 import timezone from "./address4.png";
+import Map from "./Map";
 
 export default function Result(props) {
   console.log(props.apiResult);
@@ -45,7 +46,9 @@ export default function Result(props) {
             <p>{props.data.timezone}</p>
           </div>
         </div>
-        <div className="container"></div>
+        <div className="container">
+          <Map/>
+        </div>
       </div>
     );
   }
