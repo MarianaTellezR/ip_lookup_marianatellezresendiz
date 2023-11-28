@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Map() {
+export default function Map(props) {
   return (
     <div className="Map">
-      <h1>Hey from Map.js</h1>
+      <p>{props.lat}, {props.lon}</p>
     </div>
   );
 }

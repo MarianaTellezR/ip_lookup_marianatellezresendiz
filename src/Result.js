@@ -47,7 +47,7 @@ export default function Result(props) {
           </div>
         </div>
         <div className="container">
-          <Map/>
+          <Map lat={props.data.latitude} lon={props.data.longitude}/>
         </div>
       </div>
     );
