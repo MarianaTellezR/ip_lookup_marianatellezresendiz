@@ -9,7 +9,7 @@ export default function Map(props) {
       <p>
         {props.lat}, {props.lon}
       </p>
-      <MapContainer center={position} zoom={13} style={{ height: "400px" }}>
+      <MapContainer center={position} zoom={13} style={{ width: "70%" }}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="OpenStreetMap"
