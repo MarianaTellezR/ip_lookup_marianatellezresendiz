@@ -6,10 +6,8 @@ export default function Map(props) {
   const position = [props.lat, props.lon];
   return (
     <div className="Map">
-      <p>
-        {props.lat}, {props.lon}
-      </p>
-      <MapContainer center={position} zoom={13} style={{ width: "70%" }}>
+     
+      <MapContainer center={position} zoom={13} style={{ height: "400px" }}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="OpenStreetMap"
